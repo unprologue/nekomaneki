@@ -461,13 +461,22 @@ h2 {
   letter-spacing: 0.18em;
 }
 
+.gallery-card-copy::before {
+  content: "";
+  position: absolute;
+  inset: -4.5rem -1rem -1.15rem;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(40, 28, 24, 0), rgba(40, 28, 24, 0.55));
+  pointer-events: none;
+}
+
 .gallery-card-copy .gallery-card-text {
-  margin: 0.55rem 0 0;
+  margin: 0.6rem 0 0;
   font-family: var(--font-jp);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 0.06em;
-  line-height: 1.7;
-  opacity: 0.92;
+  line-height: 1.75;
+  text-shadow: 0 1px 6px rgba(30, 20, 18, 0.45);
 }
 
 .gallery-paper {
