@@ -416,7 +416,7 @@ h2 {
 }
 
 .gallery-card-media--a {
-  background-image: url("size-yumeko.jpg");
+  background-image: url("size-yumeneko.jpg");
   background-position: 50% 60%;
 }
 
@@ -427,7 +427,7 @@ h2 {
 }
 
 .gallery-card-media--c {
-  background-image: url("size-yumeko.jpg");
+  background-image: url("size-yumeneko.jpg");
   background-position: 48% 70%;
   filter: blur(14px) saturate(1.1) brightness(0.78);
 }
@@ -459,6 +459,15 @@ h2 {
   font-weight: 500;
   font-size: 1.15rem;
   letter-spacing: 0.18em;
+}
+
+.gallery-card-copy .gallery-card-text {
+  margin: 0.55rem 0 0;
+  font-family: var(--font-jp);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  line-height: 1.7;
+  opacity: 0.92;
 }
 
 .gallery-paper {
@@ -529,6 +538,15 @@ h2 {
   letter-spacing: 0.2em;
 }
 
+.concept-desc {
+  margin: 0.35rem 0 0;
+  max-width: 17em;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.9;
+  text-align: left;
+}
+
 .concept-cta {
   width: min(640px, calc(100% - 3rem));
   margin: 3.5rem auto 0;
@@ -553,7 +571,7 @@ h2 {
   background-color: #6a5248;
   background-image:
     linear-gradient(180deg, rgba(62, 42, 38, 0.28) 0%, rgba(92, 62, 55, 0.18) 42%, rgba(48, 32, 28, 0.34) 100%),
-    url("size-yumeko.jpg");
+    url("size-yumeneko.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -810,7 +828,7 @@ h2 {
   content: "";
   position: absolute;
   inset: -8%;
-  background: url("size-yumeko.jpg") center 40% / cover no-repeat;
+  background: url("size-yumeneko.jpg") center 40% / cover no-repeat;
   filter: blur(28px) saturate(0.85) brightness(1.05);
   opacity: 0.55;
   z-index: 0;
