@@ -361,7 +361,7 @@ h2 {
 
 .gallery-card {
   position: absolute;
-  width: min(28%, 270px);
+  width: min(26.5%, 310px);
   aspect-ratio: 3 / 4.15;
   overflow: hidden;
   box-shadow: 0 22px 50px rgba(80, 55, 45, 0.16);
@@ -374,7 +374,7 @@ h2 {
 }
 
 .gallery-card--1 {
-  left: 3%;
+  left: 1.5%;
   top: 18%;
   z-index: 2;
   transform: rotate(-3.5deg);
@@ -388,16 +388,16 @@ h2 {
 }
 
 .gallery-card--3 {
-  left: 46%;
+  left: 48%;
   top: 22%;
   z-index: 5;
   transform: rotate(-1.4deg);
 }
 
 .gallery-card--4 {
-  left: 70%;
+  left: 72%;
   top: 8%;
-  z-index: 4;
+  z-index: 6;
   transform: rotate(3.8deg);
 }
 
