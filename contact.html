@@ -37,9 +37,14 @@
           <a href="index.html#news">NEWS</a>
         </nav>
         <div class="header-actions">
-          <a href="account.html" class="icon-btn">
+          <a href="account.html" class="icon-btn" data-account-link>
             <span class="visually-hidden">アカウント</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M5.5 19.2c1.6-3.2 4-4.8 6.5-4.8s4.9 1.6 6.5 4.8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </a>
+          <a href="index.html#size" class="icon-btn cart-btn" data-cart-toggle>
+            <span class="visually-hidden">カート</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 8.6h11.2l-.95 10.1a1.3 1.3 0 0 1-1.3 1.2H8.65a1.3 1.3 0 0 1-1.3-1.2L6.4 8.6Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M9.3 8.6V7.4a2.7 2.7 0 0 1 5.4 0v1.2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            <span class="cart-count" data-cart-count hidden>0</span>
           </a>
           <button type="button" class="menu-toggle" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span></button>
         </div>
@@ -62,8 +67,12 @@
     </main>
 
     <footer class="site-footer">
-      <p class="copyright">© <span data-year></span> NEKOMANEKI</p>
+      <div class="container footer-bottom">
+        <p class="footer-company">運営会社：<a href="https://unprologue.jp/" target="_blank" rel="noopener noreferrer">UNPROLOGUE株式会社</a></p>
+      </div>
+      <p class="copyright">© 2026 NEKOMANEKI</p>
     </footer>
+    <script src="shopify-config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

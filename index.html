@@ -3,11 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NEKOMANEKI</title>
+    <title>NEKOMANEKI｜願いが叶うまで寄り添う招き猫「夢猫」</title>
     <meta
       name="description"
-      content="NEKOMANEKI — 願いを、かたちに。招き猫とともに届ける記憶・今・未来。"
+      content="UNPROLOGUE株式会社が手がける招き猫ブランド「NEKOMANEKI」。水引を結んだ白い招き猫「夢猫（ゆめねこ）」が、願いが叶うその日までそばで寄り添います。"
     />
+    <link rel="canonical" href="https://www.nekomaneki.jp/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NEKOMANEKI" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:url" content="https://www.nekomaneki.jp/" />
+    <meta property="og:title" content="NEKOMANEKI｜願いが叶うまで寄り添う招き猫「夢猫」" />
+    <meta
+      property="og:description"
+      content="UNPROLOGUE株式会社が手がける招き猫ブランド「NEKOMANEKI」。水引を結んだ白い招き猫「夢猫（ゆめねこ）」が、願いが叶うその日までそばで寄り添います。"
+    />
+    <meta property="og:image" content="https://www.nekomaneki.jp/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="NEKOMANEKI 夢猫" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,7 +57,7 @@
         </nav>
 
         <div class="header-actions">
-          <a href="account.html" class="icon-btn">
+          <a href="account.html" class="icon-btn" data-account-link>
             <span class="visually-hidden">アカウント</span>
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="12" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.2" />
@@ -55,6 +70,14 @@
               />
             </svg>
           </a>
+          <a href="#size" class="icon-btn cart-btn" data-cart-toggle>
+            <span class="visually-hidden">カート</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.4 8.6h11.2l-.95 10.1a1.3 1.3 0 0 1-1.3 1.2H8.65a1.3 1.3 0 0 1-1.3-1.2L6.4 8.6Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" />
+              <path d="M9.3 8.6V7.4a2.7 2.7 0 0 1 5.4 0v1.2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+            </svg>
+            <span class="cart-count" data-cart-count hidden>0</span>
+          </a>
           <button type="button" class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
             <span></span><span></span>
           </button>
@@ -63,7 +86,7 @@
     </header>
 
     <main>
-      <section class="hero" aria-label="ヒーロー">
+      <section class="hero" id="movie" aria-label="ブランドコンセプトムービー">
         <div class="hero-media">
           <video
             class="hero-video"
@@ -94,46 +117,38 @@
         </div>
       </section>
 
-      <section class="gallery reveal" id="concept" aria-labelledby="concept-heading">
-        <h2 id="concept-heading" class="visually-hidden">Concept</h2>
-        <div class="gallery-stage">
-          <article class="gallery-card gallery-card--1">
-            <div class="gallery-card-media gallery-card-media--a"></div>
-            <div class="gallery-card-copy">
-              <p>MEMORY</p>
-              <h3>記憶</h3>
-              <p class="gallery-card-text">心に灯った小さな願いを、そっと抱きしめて。</p>
-            </div>
-          </article>
-
-          <article class="gallery-card gallery-card--2">
-            <div class="gallery-card-media gallery-card-media--b"></div>
-            <div class="gallery-card-copy">
-              <p>PRESENT</p>
-              <h3>今</h3>
-              <p class="gallery-card-text">微笑みとともに、今日のあなたのそばに。</p>
-            </div>
-          </article>
-
-          <article class="gallery-card gallery-card--3">
-            <div class="gallery-card-media gallery-card-media--c"></div>
-            <div class="gallery-paper">
-              <p class="gallery-paper-kicker">YUMENEKO</p>
-              <p class="gallery-paper-title">Work of luck</p>
-              <p class="gallery-paper-body">
-                水引の結び目に想いを込め、白い招き猫が静かに縁を招きます。
-              </p>
-            </div>
-          </article>
-
-          <article class="gallery-card gallery-card--4">
-            <div class="gallery-card-media gallery-card-media--d"></div>
-            <div class="gallery-card-copy">
-              <p>FUTURE</p>
-              <h3>未来</h3>
-              <p class="gallery-card-text">叶う日まで、ほどけない約束を結んで。</p>
-            </div>
-          </article>
+      <section class="concept reveal" id="concept" aria-labelledby="concept-heading">
+        <div class="container">
+          <header class="section-head">
+            <h2 id="concept-heading" class="section-title-en">Concept</h2>
+            <p class="section-ja">コンセプト</p>
+          </header>
+          <div class="concept-cards">
+            <article class="concept-card">
+              <div class="concept-card-media">
+                <img src="concept-memory.jpg" alt="夢猫に寄り添ってまどろむ女性" width="960" height="720" loading="lazy" />
+              </div>
+              <p class="concept-card-en">MEMORY</p>
+              <h3 class="concept-card-ja">記憶</h3>
+              <p class="concept-card-text">心に灯った願いや、大切な人との思い出。夢猫はそのすべてを覚えていて、あなたの「はじまり」を大切にしまっています。</p>
+            </article>
+            <article class="concept-card">
+              <div class="concept-card-media">
+                <img src="concept-present.jpg" alt="窓辺に並ぶ大中小の夢猫" width="960" height="720" loading="lazy" />
+              </div>
+              <p class="concept-card-en">PRESENT</p>
+              <h3 class="concept-card-ja">今</h3>
+              <p class="concept-card-text">玄関に、デスクに、リビングに。願いが叶った顔で微笑みながら、日々の暮らしのそばで静かにあなたを見守ります。</p>
+            </article>
+            <article class="concept-card">
+              <div class="concept-card-media">
+                <img src="concept-future.jpg" alt="庭の門へ歩いていく女性の後ろ姿" width="960" height="720" loading="lazy" />
+              </div>
+              <p class="concept-card-en">FUTURE</p>
+              <h3 class="concept-card-ja">未来</h3>
+              <p class="concept-card-text">梅結びの水引は「叶うまで、ほどけない約束」。願いが叶うその日まで、夢猫は縁を招き続けます。</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -141,6 +156,7 @@
         <div class="container">
           <header class="size-header">
             <h2 id="size-heading">Size Options</h2>
+            <p class="section-ja section-ja--light">サイズ</p>
             <p class="size-lead">暮らしに合わせて選ぶ、三つの大きさ。</p>
           </header>
         </div>
@@ -152,10 +168,12 @@
               </div>
               <p class="size-card-price">¥6,900</p>
               <p class="size-card-desc">S SIZE · H 10CM · DESK & GIFT</p>
-              <span class="size-card-cta">
-                Coming soon
-                <span class="size-card-cta-icon" aria-hidden="true"></span>
-              </span>
+              <div class="size-card-buy" data-shopify-product="s">
+                <span class="size-card-cta">
+                  Coming soon
+                  <span class="size-card-cta-icon" aria-hidden="true"></span>
+                </span>
+              </div>
             </article>
 
             <article class="size-card size-card--center">
@@ -164,10 +182,12 @@
               </div>
               <p class="size-card-price">¥11,000</p>
               <p class="size-card-desc">M SIZE · H 18CM · SHELF & ENTRY</p>
-              <span class="size-card-cta">
-                Coming soon
-                <span class="size-card-cta-icon" aria-hidden="true"></span>
-              </span>
+              <div class="size-card-buy" data-shopify-product="m">
+                <span class="size-card-cta">
+                  Coming soon
+                  <span class="size-card-cta-icon" aria-hidden="true"></span>
+                </span>
+              </div>
             </article>
 
             <article class="size-card size-card--right">
@@ -176,19 +196,22 @@
               </div>
               <p class="size-card-price">¥22,000</p>
               <p class="size-card-desc">L SIZE · H 24CM · STATEMENT PIECE</p>
-              <span class="size-card-cta">
-                Coming soon
-                <span class="size-card-cta-icon" aria-hidden="true"></span>
-              </span>
+              <div class="size-card-buy" data-shopify-product="l">
+                <span class="size-card-cta">
+                  Coming soon
+                  <span class="size-card-cta-icon" aria-hidden="true"></span>
+                </span>
+              </div>
             </article>
           </div>
       </section>
 
       <section class="story reveal" id="story" aria-labelledby="story-heading">
-        <div class="container story-layout">
+        <div class="container story-single">
           <div class="story-copy">
             <p class="section-label">BRAND STORY</p>
             <h2 id="story-heading">結び目に込めた、<br />三つの時間。</h2>
+            <p class="section-ja">ストーリー</p>
             <p>
               すべての夢には、まだ誰も知らない「はじまり」があります。
               NEKOMANEKI は、日本の招き猫と水引の美意識を現代の暮らしへつなぐブランドです。
@@ -198,74 +221,27 @@
               一匹の白い猫が、あなたの物語のプロローグを静かに開きます。
             </p>
           </div>
-          <div class="story-concepts">
-            <div class="concept-item">
-              <div class="concept-icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64"><path d="M32 10c8 8 14 14 14 22a14 14 0 1 1-28 0c0-8 6-14 14-22Z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M32 22c4 4 7 7 7 11a7 7 0 1 1-14 0c0-4 3-7 7-11Z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
-              </div>
-              <p class="concept-en">MEMORY</p>
-              <p class="concept-ja">記憶</p>
-              <p class="concept-desc">心に灯った願いや、大切な人との思い出。夢猫はそのすべてを覚えていて、あなたの「はじまり」を大切にしまっています。</p>
-            </div>
-            <div class="concept-item">
-              <div class="concept-icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64"><circle cx="32" cy="28" r="10" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M20 48c3.5-7 8-10.5 12-10.5S40.5 41 44 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M38 22c2-3 5-4 7-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-              </div>
-              <p class="concept-en">PRESENT</p>
-              <p class="concept-ja">今</p>
-              <p class="concept-desc">玄関に、デスクに、リビングに。願いが叶った顔で微笑みながら、日々の暮らしのそばで静かにあなたを見守ります。</p>
-            </div>
-            <div class="concept-item">
-              <div class="concept-icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64"><circle cx="32" cy="34" r="10" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M32 14v6M32 48v6M14 34h6M44 34h6M19 21l4 4M41 43l4 4M45 21l-4 4M23 43l-4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-              </div>
-              <p class="concept-en">FUTURE</p>
-              <p class="concept-ja">未来</p>
-              <p class="concept-desc">梅結びの水引は「叶うまで、ほどけない約束」。願いが叶うその日まで、夢猫は縁を招き続けます。</p>
-            </div>
-          </div>
         </div>
       </section>
 
       <section class="product reveal" id="product" aria-labelledby="product-heading">
-        <div class="palette" role="list">
-          <h2 class="palette-title" id="product-heading">yumeneko</h2>
-
-          <article class="swatch" role="listitem" style="top: 8%; left: 50%; --tone: #c48b8b">
-            <p class="swatch-name" id="name-mizuhiki">MIZUHIKI</p>
-            <button type="button" class="swatch-dot" aria-labelledby="name-mizuhiki" aria-describedby="tip-mizuhiki"></button>
-            <p class="swatch-tip" id="tip-mizuhiki">結びの美で想いを留める</p>
-          </article>
-
-          <article class="swatch" role="listitem" style="top: 29%; left: 86%; --tone: #eadfd6">
-            <p class="swatch-name" id="name-texture">TEXTURE</p>
-            <button type="button" class="swatch-dot" aria-labelledby="name-texture" aria-describedby="tip-texture"></button>
-            <p class="swatch-tip" id="tip-texture">柔らかな白と繊細な陰影</p>
-          </article>
-
-          <article class="swatch" role="listitem" style="top: 71%; left: 86%; --tone: #8fad84">
-            <p class="swatch-name" id="name-expression">EXPRESSION</p>
-            <button type="button" class="swatch-dot" aria-labelledby="name-expression" aria-describedby="tip-expression"></button>
-            <p class="swatch-tip" id="tip-expression">穏やかなまなざしと微笑み</p>
-          </article>
-
-          <article class="swatch" role="listitem" style="top: 92%; left: 50%; --tone: #d9b8b0">
-            <p class="swatch-name" id="name-food">FAVORITE FOOD</p>
-            <button type="button" class="swatch-dot" aria-labelledby="name-food" aria-describedby="tip-food"></button>
-            <p class="swatch-tip" id="tip-food">金平糖</p>
-          </article>
-
-          <article class="swatch" role="listitem" style="top: 71%; left: 14%; --tone: #b8a89c">
-            <p class="swatch-name" id="name-place">GO TO PLACE</p>
-            <button type="button" class="swatch-dot" aria-labelledby="name-place" aria-describedby="tip-place"></button>
-            <p class="swatch-tip" id="tip-place">陽だまりの窓辺</p>
-          </article>
-
-          <article class="swatch" role="listitem" style="top: 29%; left: 14%; --tone: #4a403c">
-            <p class="swatch-name" id="name-personality">PERSONALITY</p>
-            <button type="button" class="swatch-dot" aria-labelledby="name-personality" aria-describedby="tip-personality"></button>
-            <p class="swatch-tip" id="tip-personality">おだやかで、一途</p>
-          </article>
+        <div class="container profile">
+          <div class="profile-media">
+            <img src="size-yumeneko-m.jpg" alt="夢猫（YUMENEKO）" width="1122" height="1402" loading="lazy" />
+          </div>
+          <div class="profile-body">
+            <p class="section-label">YUMENEKO</p>
+            <h2 class="profile-title" id="product-heading">yumeneko</h2>
+            <p class="section-ja">夢猫のプロフィール</p>
+            <dl class="profile-list">
+              <div style="--tone: #c48b8b"><dt>水引</dt><dd>結びの美で想いを留める</dd></div>
+              <div style="--tone: #e6d9cf"><dt>質感</dt><dd>柔らかな白と繊細な陰影</dd></div>
+              <div style="--tone: #8fad84"><dt>表情</dt><dd>穏やかなまなざしと微笑み</dd></div>
+              <div style="--tone: #d9b8b0"><dt>好きな食べもの</dt><dd>金平糖</dd></div>
+              <div style="--tone: #b8a89c"><dt>お気に入りの場所</dt><dd>陽だまりの窓辺</dd></div>
+              <div style="--tone: #4a403c"><dt>性格</dt><dd>おだやかで、一途</dd></div>
+            </dl>
+          </div>
         </div>
       </section>
 
@@ -293,12 +269,15 @@
       <section class="news reveal" id="news" aria-labelledby="news-heading">
         <div class="container">
           <div class="news-header">
-            <h2 id="news-heading">NEWS</h2>
+            <div>
+              <h2 id="news-heading">NEWS</h2>
+              <p class="section-ja">お知らせ</p>
+            </div>
             <a href="news.html" class="text-link">VIEW ALL <span aria-hidden="true">→</span></a>
           </div>
           <ul class="news-list">
             <li>
-              <a href="news.html">
+              <a href="https://www.instagram.com/nekomaneki_official/" target="_blank" rel="noopener noreferrer">
                 <time datetime="2026-10-17">2026.10.17</time>
                 <span class="news-tag">CAMPAIGN</span>
                 <span class="news-title">Instagram プレゼントキャンペーン開催中｜夢猫 S・M・L 3点セットを抽選で3名様に（10/17〜10/31）</span>
@@ -306,7 +285,7 @@
               </a>
             </li>
             <li>
-              <a href="news.html">
+              <a href="https://prtimes.jp/main/html/rd/p/000000003.000183785.html" target="_blank" rel="noopener noreferrer">
                 <time datetime="2026-08-28">2026.08.28</time>
                 <span class="news-tag">EVENT</span>
                 <span class="news-title">RINO PROTEIN とのコラボポップアップを開催（8/28・29 MIL 2ND／渋谷・キャットストリート）</span>
@@ -314,7 +293,7 @@
               </a>
             </li>
             <li>
-              <a href="news.html">
+              <a href="https://prtimes.jp/main/html/rd/p/000000005.000183785.html" target="_blank" rel="noopener noreferrer">
                 <time datetime="2026-08-28">2026.08.28</time>
                 <span class="news-tag">PRESS</span>
                 <span class="news-title">PR TIMES にてブランドローンチのプレスリリースを配信しました</span>
@@ -322,15 +301,14 @@
               </a>
             </li>
             <li>
-              <a href="news.html">
+              <div class="news-row">
                 <time datetime="2026-08-27">2026.08.27</time>
                 <span class="news-tag">NEWS</span>
                 <span class="news-title">NEKOMANEKI オフィシャルサイトを公開しました</span>
-                <span class="news-chevron" aria-hidden="true">›</span>
-              </a>
+              </div>
             </li>
             <li>
-              <a href="news.html">
+              <a href="#movie">
                 <time datetime="2026-08-27">2026.08.27</time>
                 <span class="news-tag">NEWS</span>
                 <span class="news-title">ブランドコンセプトムービーを公開</span>
@@ -368,7 +346,7 @@
           <div>
             <p>STORY</p>
             <a href="#concept">Concept</a>
-            <a href="#story">Memory</a>
+            <a href="#story">Story</a>
           </div>
           <div>
             <p>SUPPORT</p>
@@ -383,9 +361,13 @@
           </a>
         </div>
       </div>
-      <p class="copyright">© <span data-year></span> NEKOMANEKI</p>
+      <div class="container footer-bottom">
+        <p class="footer-company">運営会社：<a href="https://unprologue.jp/" target="_blank" rel="noopener noreferrer">UNPROLOGUE株式会社</a></p>
+      </div>
+      <p class="copyright">© 2026 NEKOMANEKI</p>
     </footer>
 
+    <script src="shopify-config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
