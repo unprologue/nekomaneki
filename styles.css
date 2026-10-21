@@ -1354,8 +1354,14 @@ h2 {
   }
 
   .profile-list > div {
-    grid-template-columns: 7.5rem minmax(0, 1fr);
-    gap: 0.75rem;
+    grid-template-columns: 8rem minmax(0, 1fr);
+    gap: 0.6rem;
+  }
+
+  .profile-list dt {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    gap: 0.5rem;
   }
 
   .profile-list dd {
