@@ -4,7 +4,7 @@
 // The Storefront access token is a public, read-only token meant for websites (safe to commit).
 window.NEKOMANEKI_SHOPIFY = {
   // e.g. "nekomaneki.myshopify.com"
-  domain: "",
+  domain: "mp1vnh-e3.myshopify.com",
   // Shopify admin → Buy Button channel / Headless → Storefront API access token
   storefrontAccessToken: "",
   // Product IDs (numbers) for each size, from the Shopify admin URL of each product
@@ -14,5 +14,5 @@ window.NEKOMANEKI_SHOPIFY = {
     l: "",
   },
   // Customer login page URL from Shopify (Settings → Customer accounts)
-  accountUrl: "",
+  accountUrl: "https://mp1vnh-e3.myshopify.com/account",
 };
